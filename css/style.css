@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald';
+    font-size: medium;
+}
+
+body {
+    max-width: 100%;
+    display: grid;
+
+    grid-template-columns: 20% 90% 10%;
+
+    grid-template-rows: auto 3fr auto;
+
+    grid-template-areas:
+
+        "nav nav nav"
+        "aside main ASIDE"
+        "footer footer footer";
+
+}
+
+main {
+    grid-area: main;
+    width: 1200px;
+    padding: auto;
+    margin-top: 12rem;
+
+}
+
+header {
+    font-weight: bolder;
+    font-size: 300%;
+    margin-top: 25px
+}
+
+footer {
+    grid-area: footer;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    font-size: initial;
+    text-align: center;
+}
+
+#footertext {
+    /*Text im Footer*/
+    color: white;
+    font-size: 16px;
+
+}
+
+.welcome {
+    /*Homeseite inschrift*/
+    font-size: 1000%;
+    color: #BDD4E7;
+    margin-top: 150px;
+    width: fit-content;
+
+}
+
+nav {
+    /*Navigationsbalken*/
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    grid-area: nav;
+    position: absolute;
+    margin-top: 0%;
+}
+
+
+
+.navbar {
+    /*Navigationsliste*/
+    list-style: none;
+}
+
+.navbox {
+    /*Navigationsbox*/
+    float: left;
+    background-color: black;
+    text-align: center;
+    width: 150px;
+}
+
+.navtext {
+    /*Text in der Navigationsbox*/
+    display: block;
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navtext:hover {
+    /*Hover über den Navtext*/
+    background-color: #333;
+    border-left: solid white;
+}
+
+.navbox2 {
+    /*zweite Navigationsbox*/
+    display: none;
+}
+
+.navbox:hover .navbox2 {
+    /*Navbox 2 wird angezeigt*/
+    display: block;
+}
+
+html {
+    background-image: url("Medien/tree.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 1400px;
+    background-attachment: fixed;
+}
+
+#title { /*Title auf allen seiten*/
+    font-size: 300%;
+    margin-left: 320px;
+}
+
+.maintext {
+    padding: 20px;
+    background-color: #BDD4E7;
+    height: fit-content;
+    margin-top: 0;
+    grid-area: main;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+           justify-content: space-around;
+
+        }
+        input{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{
+            width: 60%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anmelde Formular</h1>
+    <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+        <label for="input-first-name">First Name: *</label>
+        <input type="text" placeholder="Yout first Name" id="input-first-name" name="first-name" maxlength="100" required>
+        <label for="input-last-name">Last Name: *</label>
+        <input type="text" placeholder="Your last Name" id="input-last-name" name="last-name" maxlength="100" required>
+        <label for="input-plz">PLZ: *</label>
+        <input type="number" placeholder="Your PLZ" id="input-plz" min="1000" max="9999" name="plz" required>
+        <label for="input-email">E-Mail: *</label>
+        <input type="email" placeholder="Your E-Mail" id="input-email" name="e-mail" required>
+        <label for="input-birthday">Birthday: *</label>
+        <input type="date" id="input-birthday" name="birthday" required>
+        <label for="input-password">Password: *</label>
+        <input type="password" placeholder="Your Password" id="input-password" name="password" required>
+        <label for="input-password-repeat">Repeat Password: *</label>
+        <input type="password" placeholder="Repeat Password" id="input-password-repeat" name="repeated-password" required>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>
