@@ -66,7 +66,7 @@ nav {
     height: 70px;
     grid-area: nav;
     position: absolute;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 
@@ -93,7 +93,7 @@ nav {
     font-size: 15px;
 }
 
-.navtext:hover {
+.navbox:hover {
     /*Hover über den Navtext*/
     background-color: #333;
     border-left: solid white;
@@ -108,6 +108,7 @@ nav {
     /*Navbox 2 wird angezeigt*/
     display: block;
 }
+
 
 html {
     background-image: url("Medien/tree.jpg");
@@ -129,5 +130,41 @@ html {
     margin-top: 0;
     grid-area: main;
 }
+.hiddennav {
+    display: none;
+    list-style: none;
+}
 
+@media only screen and (max-width: 700px) {
 
+    .welcome{
+        padding-top: 40px;
+        font-size: 300%;
+        }
+    #title{
+        font-size: 300%;
+        padding: 40px;
+    }
+    
+    .navtext{
+        font-size: 12px;
+    }
+    
+    .home{
+        min-height: 700px;
+    
+    }
+    .navbar {
+        display: none;
+    }
+    
+    #impressum{
+        font-size: 14px;
+    }
+    .hiddennav {
+        display: block;
+    }
+    .hiddennav:hover .navbox2 {
+        display: block;
+    }
+ }
