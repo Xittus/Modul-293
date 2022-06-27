@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Contact</title>
 </head>
+
 <body>
 
     <nav>
@@ -20,6 +22,22 @@
 
         </ul>
     </nav>
+<main>
+    <div class="contact"> <!--Kontaktformular-->
+        <h1 id="title">Contact</h1>
+        <form action="" method="POST">
+            <input name="vorname" class="contactinput" type="text" placeholder="Vorname*" required>
+            <input name="name" class="contactinput" type="text" placeholder="Name*" required>
+            <input name="email" class="contactinput" type="email" placeholder="E-Mail*" required>
+            <input name="adresse" class="contactinput" type="text" placeholder="Adresse" >
+            <input name="plz" class="contactinput" type="text" placeholder="PLZ" >
+            <input name="land" class="contactinput" type="text" placeholder="Land" >
+            <textarea id="contactmessage" name="message" placeholder="Message*" required></textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+
 </body>
 <footer>
     <h3>© Copyright 2022</h3>

@@ -125,7 +125,7 @@ html {
 
 .maintext {
     padding: 20px;
-    background-color: #BDD4E7;
+    background-color: white;
     height: fit-content;
     margin-top: 0;
     grid-area: main;
@@ -133,6 +133,50 @@ html {
 .hiddennav {
     display: none;
     list-style: none;
+}
+.contact{ /*DIV Kontaktseite*/
+    padding: 30px;
+    padding-top: 70px;
+}
+
+
+.contactinput { /*Inputfeld Kontaktseite*/
+    color: #212227;
+    border: none;
+    border-bottom: 1px solid #212227;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+#contactmessage{ /*Textfeld Kontaktseite*/
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1px solid #212227 ;
+    min-height: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+}
+
+#submit{
+    background-color: #212227;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#submit:hover{
+    background-color: #637074;
+
 }
 
 @media only screen and (max-width: 700px) {
