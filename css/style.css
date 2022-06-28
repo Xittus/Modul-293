@@ -122,10 +122,11 @@ html {
 }
 
 
-#title {
+.title {
     /*Title auf allen seiten*/
     font-size: 300%;
-    grid-area: main;
+    text-align: center;
+    margin-left: 100%;
 }
 
 .maintext {
