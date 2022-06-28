@@ -5,7 +5,7 @@
     font-size: medium;
 }
 
-body {
+body { /*Body auf allen seiten mit dem Grid*/
     max-width: 100%;
     display: grid;
 
@@ -101,8 +101,16 @@ nav {
 .navbox2 {
     /*zweite Navigationsbox*/
     display: none;
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+    width: 150px;
+    height: 40px;
 }
-
+.navbox2:hover {
+    background-color: #333;
+    border-left:solid white;
+}
 
 
 html {
@@ -121,7 +129,7 @@ html {
     margin-left: 100%;
 }
 
-.maintext {
+.maintext { /*Formatierung des Textest auf allen seiten in der Main*/
     padding: 20px;
     background-color: white;
     height: fit-content;
@@ -129,9 +137,13 @@ html {
     grid-area: main;
 }
 
-.hiddennav {
+.hiddennav {/*versteckte NAVBar bei verkleinerung des Fensters*/
     display: none;
     list-style: none;
+}
+.hiddennav:hover {
+    background-color: black;
+    width: fit-content;
 }
 
 .contact {
@@ -167,7 +179,7 @@ html {
     outline: none;
 }
 
-#submit {
+#submit { /*Submit button*/
     background-color: #212227;
     color: white;
     padding: 12px 20px;
