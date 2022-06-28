@@ -1,12 +1,23 @@
 @import url(https://fonts.google.com/specimen/Oswald?query=oswald);
+
 * {
     box-sizing: border-box;
     font-family: "oswald", sans-serif;
     font-size: medium;
 }
 
-body { /*Body auf allen seiten mit dem Grid*/
-    max-width: 100%;
+body {
+    /*Body auf allen seiten mit dem Grid*/
+
+    /*hintergrund auf allen Seiten*/
+    background-image: url("Medien/tree.jpg");
+    /*   background-size: cover;
+       background-position: center;
+       min-height: 1400px;
+       background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: fit-content;
     display: grid;
 
     grid-template-columns: 20% 90% 10%;
@@ -16,7 +27,7 @@ body { /*Body auf allen seiten mit dem Grid*/
     grid-template-areas:
 
         "nav nav nav"
-        "aside main ASIDE"
+        "aside main main"
         "footer footer footer";
 
 }
@@ -36,10 +47,9 @@ header {
 footer {
     grid-area: footer;
     bottom: 0;
-    position: fixed;
     color: white;
     font-size: initial;
-    text-align: center;
+    text-align: left;
 }
 
 #footertext {
@@ -53,7 +63,7 @@ footer {
     /*Homeseite inschrift*/
     font-size: 1000%;
     color: #BDD4E7;
-    margin-top: 150px;
+    margin-top: 10;
     width: fit-content;
 
 }
@@ -61,7 +71,7 @@ footer {
 nav {
     /*Navigationsbalken*/
     background-color: black;
-    width: 100%;
+    width: 80%;
     height: 70px;
     grid-area: nav;
     position: absolute;
@@ -82,6 +92,7 @@ nav {
     text-align: center;
     width: 150px;
 }
+
 .navbox1 {
     background-color: black;
     text-align: center;
@@ -112,20 +123,13 @@ nav {
     width: 150px;
     height: 40px;
 }
+
 .navbox2:hover {
     background-color: #333;
-    border-left:solid white;
+    border-left: solid white;
 }
 
 
-html {
-    /*hintergrund auf allen Seiten*/
-    background-image: url("Medien/tree.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 1400px;
-    background-attachment: fixed;
-}
 
 
 .title {
@@ -134,7 +138,8 @@ html {
     margin-left: 100%;
 }
 
-.maintext { /*Formatierung des Textest auf allen seiten in der Main*/
+.maintext {
+    /*Formatierung des Textest auf allen seiten in der Main*/
     padding: 20px;
     background-color: white;
     height: fit-content;
@@ -142,19 +147,21 @@ html {
     grid-area: main;
 }
 
-.hiddennav {/*versteckte NAVBar bei verkleinerung des Fensters*/
+.hiddennav {
+    /*versteckte NAVBar bei verkleinerung des Fensters*/
     display: none;
     list-style: none;
 }
+
 .hiddennav:hover {
-    
+
     width: fit-content;
 }
 
 .contact {
     /*DIV Kontaktseite*/
     padding: 30px;
-   margin-top: 0;
+    margin-top: 0;
 }
 
 
@@ -184,7 +191,8 @@ html {
     outline: none;
 }
 
-#submit { /*Submit button*/
+#submit {
+    /*Submit button*/
     background-color: #212227;
     color: white;
     padding: 12px 20px;
@@ -199,17 +207,23 @@ html {
 
 }
 
+#platz {
+    height: 700px;
+}
+
 @media only screen and (max-width: 700px) {
 
-    .welcome { /*titel auf Homepage*/
+    .welcome {
+        /*titel auf Homepage*/
         padding-top: 40px;
         font-size: 300%;
         font-weight: lighter;
     }
 
-    main{
+    main {
         width: 400px;
     }
+
     .title {
         font-size: 150%;
         padding: 40px;
