@@ -24,16 +24,13 @@ body {
 main {
     grid-area: main;
     width: 1200px;
-    padding: auto;
     margin-top: 12rem;
-
 }
 
 header {
     font-weight: bolder;
     font-size: 300%;
     margin-top: 25px;
-    box-align: center;
 }
 
 footer {
@@ -106,10 +103,6 @@ nav {
     display: none;
 }
 
-.navbox:hover .navbox2 {
-    /*Navbox 2 wird angezeigt*/
-    display: block;
-}
 
 
 html {
@@ -125,7 +118,6 @@ html {
 .title {
     /*Title auf allen seiten*/
     font-size: 300%;
-    text-align: center;
     margin-left: 100%;
 }
 
@@ -195,10 +187,14 @@ html {
     .welcome {
         padding-top: 40px;
         font-size: 300%;
+        font-weight: lighter;
     }
 
-    #title {
-        font-size: 300%;
+    main{
+        width: 400px;
+    }
+    .title {
+        font-size: 150%;
         padding: 40px;
     }
 
@@ -221,9 +217,11 @@ html {
 
     .hiddennav {
         display: block;
+        list-style: none;
     }
 
     .hiddennav:hover .navbox2 {
         display: block;
+        list-style: none;
     }
 }
