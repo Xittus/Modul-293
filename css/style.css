@@ -11,12 +11,12 @@ body {
 
     /*hintergrund auf allen Seiten*/
     background-image: url("Medien/tree.jpg");
-    /*   background-size: cover;
+      background-size: cover;
        background-position: center;
        min-height: 1400px;
-       background-attachment: fixed;*/
-    background-position: center;
-    background-repeat: no-repeat;
+       background-attachment: fixed;
+    /*background-position: center;
+    background-repeat: no-repeat;*/
     max-width: fit-content;
     display: grid;
 
@@ -42,6 +42,7 @@ header {
     font-weight: bolder;
     font-size: 300%;
     margin-top: 25px;
+
 }
 
 footer {
@@ -71,7 +72,7 @@ footer {
 nav {
     /*Navigationsbalken*/
     background-color: black;
-    width: 80%;
+    width: 99%;
     height: 70px;
     grid-area: nav;
     position: absolute;
@@ -138,6 +139,7 @@ nav {
     margin-left: 100%;
 }
 
+
 .maintext {
     /*Formatierung des Textest auf allen seiten in der Main*/
     padding: 20px;
@@ -145,6 +147,7 @@ nav {
     height: fit-content;
     margin-top: 0;
     grid-area: main;
+    max-width: 95%;
 }
 
 .hiddennav {
