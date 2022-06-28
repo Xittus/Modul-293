@@ -1,6 +1,7 @@
+@import url(https://fonts.google.com/specimen/Oswald?query=oswald);
 * {
     box-sizing: border-box;
-    font-family: 'Oswald';
+    font-family: "oswald", sans-serif;
     font-size: medium;
 }
 
@@ -31,7 +32,8 @@ main {
 header {
     font-weight: bolder;
     font-size: 300%;
-    margin-top: 25px
+    margin-top: 25px;
+    box-align: center;
 }
 
 footer {
@@ -111,6 +113,7 @@ nav {
 
 
 html {
+    /*hintergrund auf allen Seiten*/
     background-image: url("Medien/tree.jpg");
     background-size: cover;
     background-position: center;
@@ -118,9 +121,11 @@ html {
     background-attachment: fixed;
 }
 
-#title { /*Title auf allen seiten*/
+
+#title {
+    /*Title auf allen seiten*/
     font-size: 300%;
-    margin-left: 320px;
+    grid-area: main;
 }
 
 .maintext {
@@ -130,17 +135,21 @@ html {
     margin-top: 0;
     grid-area: main;
 }
+
 .hiddennav {
     display: none;
     list-style: none;
 }
-.contact{ /*DIV Kontaktseite*/
+
+.contact {
+    /*DIV Kontaktseite*/
     padding: 30px;
-    padding-top: 70px;
+   margin-top: 0;
 }
 
 
-.contactinput { /*Inputfeld Kontaktseite*/
+.contactinput {
+    /*Inputfeld Kontaktseite*/
     color: #212227;
     border: none;
     border-bottom: 1px solid #212227;
@@ -153,62 +162,67 @@ html {
 
 
 
-#contactmessage{ /*Textfeld Kontaktseite*/
+#contactmessage {
+    /*Textfeld Kontaktseite*/
     width: 100%;
     font-size: 16px;
     margin-top: 20px;
-    border: 1px solid #212227 ;
+    border: 1px solid #212227;
     min-height: 200px;
     border-radius: 8px;
     padding: 10px;
     outline: none;
 }
 
-#submit{
+#submit {
     background-color: #212227;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
 
-#submit:hover{
+#submit:hover {
     background-color: #637074;
 
 }
 
 @media only screen and (max-width: 700px) {
 
-    .welcome{
+    .welcome {
         padding-top: 40px;
         font-size: 300%;
-        }
-    #title{
+    }
+
+    #title {
         font-size: 300%;
         padding: 40px;
     }
-    
-    .navtext{
+
+    .navtext {
         font-size: 12px;
     }
-    
-    .home{
+
+    .home {
         min-height: 700px;
-    
+
     }
+
     .navbar {
         display: none;
     }
-    
-    #impressum{
+
+    #impressum {
         font-size: 14px;
     }
+
     .hiddennav {
         display: block;
     }
+
     .hiddennav:hover .navbox2 {
         display: block;
     }
- }
+}
