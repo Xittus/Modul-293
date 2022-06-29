@@ -6,7 +6,7 @@
     font-size: medium;
 }
 html {
-    width: 1200px;
+    width: 1000px;
 }
 
 body {
@@ -295,6 +295,7 @@ iframe {
     .hiddennav:hover .navbox2 {
         display: block;
         list-style: none;
+<<<<<<< Updated upstream
     }
 
     #platz {
@@ -312,6 +313,8 @@ iframe {
     iframe {
         height: 150%;
         width: 100%;
+=======
+>>>>>>> Stashed changes
     }
 
 }
