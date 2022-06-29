@@ -11,10 +11,10 @@ body {
 
     /*hintergrund auf allen Seiten*/
     background-image: url("Medien/tree.jpg");
-      background-size: cover;
-       background-position: center;
-       min-height: 1400px;
-       background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 1400px;
+    background-attachment: fixed;
     /*background-position: center;
     background-repeat: no-repeat;*/
     max-width: fit-content;
@@ -209,13 +209,20 @@ nav {
     background-color: #637074;
 
 }
+
 iframe {
     margin-left: 30%;
 }
+
 #platz {
+    /*Platzhalter auf der Homepage*/
     height: 700px;
 }
-@media only screen and (max-width: 1400px){
+.blog {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1400px) {
     .welcome {
         /*titel auf Homepage*/
         padding-top: 40px;
@@ -240,10 +247,10 @@ iframe {
         min-height: 700px;
 
     }
-    
-iframe {
-    margin: 0;
-}
+
+    iframe {
+        margin: 0;
+    }
 
 }
 
@@ -287,20 +294,22 @@ iframe {
         display: block;
         list-style: none;
     }
+
     #platz {
         height: 0px;
     }
+
     nav {
         width: 95%;
     }
-    
+
     .homemain {
         width: 500px;
     }
+
     iframe {
         height: 150%;
         width: 100%;
     }
 
 }
-
