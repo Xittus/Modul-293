@@ -209,12 +209,45 @@ nav {
     background-color: #637074;
 
 }
-
+iframe {
+    margin-left: 30%;
+}
 #platz {
     height: 700px;
 }
+@media only screen and (max-width: 1400px){
+    .welcome {
+        /*titel auf Homepage*/
+        padding-top: 40px;
+        font-size: 500%;
+        font-weight: lighter;
+    }
 
-@media only screen and (max-width: 700px) {
+    main {
+        width: 800px;
+    }
+
+    .title {
+        font-size: 300%;
+        padding: 40px;
+    }
+
+    .navtext {
+        font-size: 12px;
+    }
+
+    .home {
+        min-height: 700px;
+
+    }
+    
+iframe {
+    margin: 0;
+}
+
+}
+
+@media only screen and (max-width: 900px) {
 
     .welcome {
         /*titel auf Homepage*/
@@ -236,10 +269,6 @@ nav {
         font-size: 12px;
     }
 
-    .home {
-        min-height: 700px;
-
-    }
 
     .navbar {
         display: none;
@@ -258,4 +287,20 @@ nav {
         display: block;
         list-style: none;
     }
+    #platz {
+        height: 0px;
+    }
+    nav {
+        width: 95%;
+    }
+    
+    .homemain {
+        width: 500px;
+    }
+    iframe {
+        height: 150%;
+        width: 100%;
+    }
+
 }
+
