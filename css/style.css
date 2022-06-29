@@ -5,6 +5,9 @@
     font-family: "oswald", sans-serif;
     font-size: medium;
 }
+html {
+    width: 1200px;
+}
 
 body {
     /*Body auf allen seiten mit dem Grid*/
@@ -34,7 +37,6 @@ body {
 
 main {
     grid-area: main;
-    width: 1200px;
     margin-top: 12rem;
 }
 
@@ -71,8 +73,8 @@ footer {
 
 nav {
     /*Navigationsbalken*/
+    width: 100%;
     background-color: black;
-    width: 99%;
     height: 70px;
     grid-area: nav;
     position: absolute;
@@ -218,9 +220,7 @@ iframe {
     /*Platzhalter auf der Homepage*/
     height: 700px;
 }
-.blog {
-    width: 90%;
-}
+
 
 @media only screen and (max-width: 1400px) {
     .welcome {
@@ -265,11 +265,13 @@ iframe {
 
     main {
         width: 400px;
+        margin: 5px;
     }
 
     .title {
         font-size: 150%;
         padding: 40px;
+        margin: 12px;
     }
 
     .navtext {
@@ -300,7 +302,7 @@ iframe {
     }
 
     nav {
-        width: 95%;
+        width: 100%
     }
 
     .homemain {
@@ -311,5 +313,26 @@ iframe {
         height: 150%;
         width: 100%;
     }
+
+}
+@media only screen and (max-width: 600px) { 
+
+    html {
+        width: 590px;
+        height: 900px;
+    }
+
+main {
+    width: 300px;
+
+}
+.title {
+    font-size: 100%;
+}
+.welcome {
+    position:relative;
+    top: 300px;
+    margin-left: 10%;
+}
 
 }
