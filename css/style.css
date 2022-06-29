@@ -295,7 +295,7 @@ iframe {
     .hiddennav:hover .navbox2 {
         display: block;
         list-style: none;
-<<<<<<< Updated upstream
+
     }
 
     #platz {
@@ -313,21 +313,35 @@ iframe {
     iframe {
         height: 150%;
         width: 100%;
-=======
->>>>>>> Stashed changes
+
     }
 
 }
 @media only screen and (max-width: 600px) { 
+    body {
+        display: grid;
+
+        grid-template-columns: 90%;
+    
+        grid-template-rows:auto;
+    
+        grid-template-areas:
+    
+            "nav "
+            "main"
+            "footer";
+    
+    }
 
     html {
         width: 590px;
-        height: 900px;
+        height: 400px;
     }
 
 main {
     width: 300px;
-
+    margin-left: 0;
+    text-align: left;
 }
 .title {
     font-size: 100%;
@@ -336,6 +350,9 @@ main {
     position:relative;
     top: 300px;
     margin-left: 10%;
+}
+#platz {
+    display: none;
 }
 
 }
