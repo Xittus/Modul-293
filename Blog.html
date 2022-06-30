@@ -1,6 +1,12 @@
+<!DOCTYPE html>
+<html lang="de"> 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Kurze Erklärung des Läufersystems in Volleyball">
+    <meta name="keywords" content="5-1, Volleyball, Läufer-System, Läufersystem">
+    <meta name="author" content="Ewan Waldmann">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <title>Blog</title>
@@ -12,23 +18,27 @@
     </header>
     <nav class="blog">
         <!--Navigationsleiste-->
-        <ul class="navbar">
-            <li class="navbox"><a class="navtext" href="index.html">Home</a> </li>
-            <li class="navbox"><a class="navtext" href="aboutme.html">About Me</a></li>
-            <li class="navbox"><a class="navtext" href="Blog.html">Blog</a> </li>
-            <li class="navbox"><a class="navtext" href="contact.html">Contact</a> </li>
-            <li class="navbox"><a class="navtext" href="impressum.html">Impressum</a></li>
 
-        </ul>
-        <ul class="hiddennav">
-            <li class="navbox1"><a class="navtext" href="index.html">Menu</a></li>
-            <ul>
-                <li class="navbox2"><a class="navtext" href="aboutme.html">About Me</a></li>
-                <li class="navbox2"><a class="navtext" href="Blog.html">Blog</a> </li>
-                <li class="navbox2"><a class="navtext" href="contact.html">Contact</a> </li>
-                <li class="navbox2"><a class="navtext" href="impressum.html">Impressum</a></li>
+            <ul class="navbar">
+                <li class="navbox"><a class="navtext" href="index.html">Home</a> </li>
+                <li class="navbox"><a class="navtext" href="aboutme.html">About Me</a></li>
+                <li class="navbox"><a class="navtext" href="Blog.html">Blog</a> </li>
+                <li class="navbox"><a class="navtext" href="contact.html">Contact</a> </li>
+                <li class="navbox"><a class="navtext" href="impressum.html">Impressum</a></li>
+                
             </ul>
-    </nav>
+            <div class="hiddennav">
+            <ul>
+                <li class="navbox1"><a class="navtext" href="index.html">Menu</a></li>
+            </ul>
+                <ul>
+                    <li class="navbox2"><a class="navtext" href="aboutme.html">About Me</a></li>
+                    <li class="navbox2"><a class="navtext" href="Blog.html">Blog</a> </li>
+                    <li class="navbox2"><a class="navtext" href="contact.html">Contact</a> </li>
+                    <li class="navbox2"><a class="navtext" href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </nav>
     <main class="maintext">
         <p>Das 5-1 Läufer-System ist im Volleyball auf hohem Level essentiel. Im Prinzip funktioniert es so das der
             Passspieler immer den Angriff einleitet und er 5 Angreifer zu verfügung hat. Deshalb 5-1 System. Der
@@ -36,18 +46,20 @@
             auf der Position 1 und rennt nacht vorne ans Netz um dort den Pass zu spielen. Vorteil dieses Systems ist
             das der Passspieler wenn er hinten ist 3 Angreiffer am Netz anspielen kann. So geht es auch weiter in den
             nächsten Rotationen solange er hinten ist und nicht am Netz steht. Falls euch das noch genauer interessiert
-            ist hier das Regelwerk des Swiss-Volley Verbandes:</p> <iframe width="500"; height="500";
-            src="css/Medien/GameBook_51_P1-P1.pdf" frameborder="0" class="Gamebook"></iframe>
+            ist hier das Regelwerk des Swiss-Volley Verbandes:</p> <iframe id="gamebook" 
+            src="css/Medien/GameBook_51_P1-P1.pdf"></iframe>
 
         <p>
             Hier noch ein erklärungs Video:
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qg6MlEOhjZY" title="YouTube video player"
-            frameborder="0"
+        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/qg6MlEOhjZY" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            >
+        </iframe>
     </main>
+    <footer>
+        <h3>© Copyright 2022</h3>
+    </footer>
 </body>
-<footer>
-    <h3>© Copyright 2022</h3>
-</footer>
+
+</html>

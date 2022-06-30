@@ -66,7 +66,7 @@ footer {
     /*Homeseite inschrift*/
     font-size: 1000%;
     color: #BDD4E7;
-    margin-top: 10;
+    margin-top: 10px;
     width: fit-content;
 
 }
@@ -225,8 +225,18 @@ iframe {
     float: right;
     padding-left: 10px;
     padding-bottom: 10px;
+    max-width: 300px;
+    height: auto;
 }
+#gamebook {
+    width: 500px;
+    height: 650px;
+}
+#vid {
+    width: 500px;
+    height: 300px;
 
+}
 @media only screen and (max-width: 1400px) {
     .welcome {
         /*titel auf Homepage*/
@@ -256,6 +266,11 @@ iframe {
     iframe {
         margin: 0;
     }
+    .ewan {
+        width: 50%;
+        height: auto;
+        margin-top: 80px;
+    }
 
 }
 
@@ -263,7 +278,7 @@ iframe {
 
     .welcome {
         /*titel auf Homepage*/
-        padding-top: 40px;
+       margin-top: 50%;
         font-size: 300%;
         font-weight: lighter;
     }
@@ -320,7 +335,14 @@ iframe {
         width: 100%;
 
     }
-
+    .ewan {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 0;
+margin: auto; 
+margin-left: 30px;  
+margin-top: 30px; }
 }
 @media only screen and (max-width: 600px) { 
     body {
@@ -355,6 +377,7 @@ main {
     position:relative;
     top: 300px;
     margin-left: 10%;
+    margin-top: 0;
 }
 #platz {
     display: none;
@@ -363,6 +386,9 @@ iframe {
     height: 150%;
     width: 100%;
 
+}
+.ewan {
+    margin: 0;
 }
 
 }
