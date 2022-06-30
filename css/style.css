@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: "oswald", sans-serif;
-    font-size: medium;
+    font-size: 20px;
 }
 html {
     width: 1000px;
@@ -330,11 +330,6 @@ iframe {
         width: 500px;
     }
 
-    iframe {
-        height: 150%;
-        width: 100%;
-
-    }
     .ewan {
         width: 100%;
         height: auto;
@@ -342,8 +337,17 @@ iframe {
         padding: 0;
 margin: auto; 
 margin-left: 30px;  
-margin-top: 30px; }
+margin-top: 30px; 
 }
+#gamebook {
+    width: 350px;
+    height: 500px;
+}
+#vid {
+    width: 350px;
+    height: auto;
+
+}}
 @media only screen and (max-width: 600px) { 
     body {
         display: grid;
@@ -358,6 +362,11 @@ margin-top: 30px; }
             "main"
             "footer";
     
+    }
+    * {
+        box-sizing: border-box;
+        font-family: "oswald", sans-serif;
+        font-size: 15px;
     }
 
     html {
