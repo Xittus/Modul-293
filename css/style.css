@@ -356,5 +356,10 @@ main {
 #platz {
     display: none;
 }
+iframe {
+    height: 150%;
+    width: 100%;
+
+}
 
 }
