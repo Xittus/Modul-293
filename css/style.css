@@ -222,6 +222,7 @@ iframe {
 }
 .ewan {
     float: right;
+    padding-left: 10px;
 }
 
 @media only screen and (max-width: 1400px) {
